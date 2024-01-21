@@ -3,7 +3,7 @@ import openai
 from streamlit_chat import message
 
 # تعيين مفتاح API الخاص بـ OpenAI
-openai.api_key = ""
+openai.api_key = st.secrets["openai_key"]
 
 def api_calling(prompt, score):
     context = "You are an expert in environment and carbon footprint. "
